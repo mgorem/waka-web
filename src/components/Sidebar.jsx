@@ -18,6 +18,8 @@ import {
   ChevronLeft,
   ChevronRightOutlined,
   HomeOutlined,
+  CategoryOutlined,
+  Inventory2Outlined,
   ShoppingCartOutlined,
   Groups20Outlined,
   PublicOutlined,
@@ -51,11 +53,11 @@ const navItems = [
   },
   {
     text: "Products",
-    icon: <HomeOutlined />,
+    icon: <Inventory2Outlined />,
   },
   {
     text: "Categories",
-    icon: <HomeOutlined />,
+    icon: <CategoryOutlined />,
   },
   // {
   //   text: "Others",
