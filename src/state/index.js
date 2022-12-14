@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   mode: "light",
+  // userId
 };
 
 export const globalSlice = createSlice({
