@@ -14,15 +14,20 @@ import { setMode } from "state";
 import profileImage from "assets/profile1.jpeg";
 import {
   AppBar,
+  Button,
   IconButton,
   InputBase,
   Toolbar,
   useTheme,
 } from "@mui/material";
 
-const Navbar = ({ isSidebarOpen, setIsSidebarOpen }) => {
+const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
   const dispatch = useDispatch();
   const theme = useTheme();
+
+  const handleClick = () => {
+    console.log("handled click");
+  };
 
   return (
     <AppBar sx={{ position: "static", background: "none", boxShadow: "none" }}>
@@ -57,6 +62,10 @@ const Navbar = ({ isSidebarOpen, setIsSidebarOpen }) => {
           <IconButton>
             <SettingsOutlined sx={{ fontSize: "25px" }} />
           </IconButton>
+
+          <FlexBetween>
+            {/* <Button onClick={handleClick}></Button> */}
+          </FlexBetween>
         </FlexBetween>
       </Toolbar>
     </AppBar>
